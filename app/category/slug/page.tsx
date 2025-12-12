@@ -1,4 +1,5 @@
-import ProductCard from "@/components/ProductCard";
+import ProductCard from "@/components/product/ProductCard";
+
 
 type Props = {
   params: {

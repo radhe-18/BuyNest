@@ -1,4 +1,4 @@
-import Sidebar from "@/components/layout/Sidebar";
+import Sidebar from "@/components/Layout/Sidebar";
 import HeroBanner from "@/components/home/HeroBanner";
 import RightPromo from "@/components/home/RightPromo";
 

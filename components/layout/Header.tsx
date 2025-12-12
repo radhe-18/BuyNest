@@ -5,7 +5,7 @@ import { useCart } from "@/store/cart";
 import { LogIn } from "lucide-react";
 import { useEffect, useState } from "react";
 import LocationSelector from "@/components/location/LocationSelector";
-import ProfileDropdown from "@/components/layout/ProfileDropdown";
+import ProfileDropdown from "@/components/Layout/ProfileDropdown";
 import SearchBar from "@/components/SearchBar";
 
 export default function Header() {
