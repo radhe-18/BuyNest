@@ -2,9 +2,7 @@ import { products } from "@/data/products";
 import ProductGrid from "@/components/product/ProductGrid";
 
 export default function ValuePacksPage() {
-  const packs = products.filter(
-    (p) => p.isValuePack
-  );
+  const packs = products.filter((p: any) => p?.isValuePack === true);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-6">

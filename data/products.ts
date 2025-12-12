@@ -15,6 +15,7 @@ export type Product = {
     | "baby-kids"
     | "household-kitchen";
   image: string;
+ isValuePack?: boolean;
 };
 
 /* =========================
