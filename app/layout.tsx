@@ -1,5 +1,5 @@
 import "./globals.css";
-import Header from "@/components/Layout/Header";
+import Header from "@/components/layout/Header";
 
 export const metadata = {
   title: "BuyNest – Online Grocery & Essentials",
