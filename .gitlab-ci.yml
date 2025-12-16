@@ -20,3 +20,6 @@ build_app:
     - npm run build
 
 docker:
+  stage: build
+  script: 
+    - docker build -t buynest-frontend .
