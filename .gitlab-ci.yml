@@ -1,0 +1,15 @@
+image: node:25-alpine3.22
+
+stages:
+  - install
+  - build
+
+install_dependencies:
+  stage: install
+  script:
+    - npm install
+
+build_app:
+  stage: build
+  script:
+    - npm run build
