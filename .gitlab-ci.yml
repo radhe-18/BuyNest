@@ -4,10 +4,15 @@ stages:
   - install
   - build
 
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
 install_dependencies:
   stage: install
   script:
-    - npm install
+    - npm ci
 
 build_app:
   stage: build
