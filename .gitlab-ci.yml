@@ -20,8 +20,14 @@ build_app:
     - npm run build
 
 
-    
-docker:
-  stage: build
-  script: 
+
+docker_build:
+  stage: docker
+  image: docker:latest
+  services:
+    - docker:dind
+  variables:
+    DOCKER_TLS_CERTDIR: ""
+  script:
+    - docker --version
     - docker build -t buynest-frontend .
