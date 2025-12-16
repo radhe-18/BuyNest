@@ -19,6 +19,8 @@ build_app:
   script:
     - npm run build
 
+
+    
 docker:
   stage: build
   script: 
