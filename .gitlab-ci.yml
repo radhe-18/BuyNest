@@ -1,26 +1,34 @@
-image: node:25-alpine3.22
-
 stages:
   - install
   - build
+  - docker
 
 cache:
   key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules/
 
+# --------------------
+# INSTALL
+# --------------------
 install_dependencies:
   stage: install
+  image: node:25-alpine3.22
   script:
     - npm ci
 
+# --------------------
+# BUILD
+# --------------------
 build_app:
   stage: build
+  image: node:18-alpine
   script:
     - npm run build
 
-
-
+# --------------------
+# DOCKER
+# --------------------
 docker_build:
   stage: docker
   image: docker:latest
