@@ -39,3 +39,5 @@ docker_build:
   script:
     - docker --version
     - docker build -t buynest-frontend .
+
+    
