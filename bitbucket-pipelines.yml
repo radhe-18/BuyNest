@@ -1,0 +1,17 @@
+image: docker:24
+
+pipelines:
+  default:
+    - step:
+        name: Docker Build & Push
+        services:
+          - docker
+        script:
+          - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+          - docker build -t viddeveloper1/buynest-frontend:latest .
+          - docker push viddeveloper1/buynest-frontend:latest
+
+definitions:
+  services:
+    docker:
+      memory: 3072
